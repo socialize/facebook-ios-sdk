@@ -1,0 +1,8 @@
+#define FBFrictionlessRequestSettings SZFBFrictionlessRequestSettings
+#define FBRequest SZFBRequest
+#define FBRequestDelegate SZFBRequestDelegate
+#define Facebook SZFacebook
+#define FBSessionDelegate SZFBSessionDelegate
+#define FBLoginDialog SZFBLoginDialog
+#define FBDialog SZFBDialog
+#define FBDialogDelegate SZFBDialogDelegate
