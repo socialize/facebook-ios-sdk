@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-
+#import "hide_symbols_facebook.h"
 #include "Facebook.h"
 #include "FBDialog.h"
 #include "FBLoginDialog.h"
