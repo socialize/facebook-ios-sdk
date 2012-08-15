@@ -14,6 +14,8 @@
  * limitations under the License.
  */
 
+#import "hide_symbols_facebook.h"
+
 // core
 #import "FBSession.h"
 #import "FBRequest.h"

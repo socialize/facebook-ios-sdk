@@ -104,6 +104,8 @@
 		85F99E3F15C3751100D807A5 /* FBViewController+Internal.h in Headers */ = {isa = PBXBuildFile; fileRef = 85F99E3E15C3751000D807A5 /* FBViewController+Internal.h */; };
 		AA747D9F0F9514B9006C5449 /* facebook_ios_sdk_Prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = AA747D9E0F9514B9006C5449 /* facebook_ios_sdk_Prefix.pch */; };
 		AACBBE4A0F95108600F1A2B1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AACBBE490F95108600F1A2B1 /* Foundation.framework */; };
+		AAFEDA5715DC2E300030AFCD /* hide_symbols_facebook_internal.h in Headers */ = {isa = PBXBuildFile; fileRef = AAFEDA5515DC2E300030AFCD /* hide_symbols_facebook_internal.h */; };
+		AAFEDA5815DC2E300030AFCD /* hide_symbols_facebook.h in Headers */ = {isa = PBXBuildFile; fileRef = AAFEDA5615DC2E300030AFCD /* hide_symbols_facebook.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		AEA93B0B11D5293B000A4545 /* FBRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = AEA93B0211D5293B000A4545 /* FBRequest.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		AEA93B0C11D5293B000A4545 /* FBRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = AEA93B0311D5293B000A4545 /* FBRequest.m */; };
 		AEA93B1011D5293B000A4545 /* FBLoginDialog.m in Sources */ = {isa = PBXBuildFile; fileRef = AEA93B0711D5293B000A4545 /* FBLoginDialog.m */; };
@@ -242,6 +244,8 @@
 		85F99E3E15C3751000D807A5 /* FBViewController+Internal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "FBViewController+Internal.h"; sourceTree = "<group>"; };
 		AA747D9E0F9514B9006C5449 /* facebook_ios_sdk_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = facebook_ios_sdk_Prefix.pch; sourceTree = SOURCE_ROOT; };
 		AACBBE490F95108600F1A2B1 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		AAFEDA5515DC2E300030AFCD /* hide_symbols_facebook_internal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = hide_symbols_facebook_internal.h; sourceTree = "<group>"; };
+		AAFEDA5615DC2E300030AFCD /* hide_symbols_facebook.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = hide_symbols_facebook.h; sourceTree = "<group>"; };
 		AEA93B0211D5293B000A4545 /* FBRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FBRequest.h; sourceTree = "<group>"; };
 		AEA93B0311D5293B000A4545 /* FBRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FBRequest.m; sourceTree = "<group>"; };
 		AEA93B0611D5293B000A4545 /* FBLoginDialog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FBLoginDialog.h; sourceTree = "<group>"; };
@@ -373,6 +377,8 @@
 		08FB77AEFE84172EC02AAC07 /* FacebookSDK */ = {
 			isa = PBXGroup;
 			children = (
+				AAFEDA5515DC2E300030AFCD /* hide_symbols_facebook_internal.h */,
+				AAFEDA5615DC2E300030AFCD /* hide_symbols_facebook.h */,
 				8527EC5615C9D3CF00660673 /* FBUserSettingsViewResources.bundle */,
 				DDDFFB2D15B4C4F4008A1040 /* FacebookSDKResources.bundle */,
 				AEA93B1311D52959000A4545 /* JSON */,
@@ -589,6 +595,8 @@
 				85E4AC7D15B63CC500F17346 /* FBViewController.h in Headers */,
 				2A68590615C1E37E001D4EDD /* FBSettings+Internal.h in Headers */,
 				85F99E3F15C3751100D807A5 /* FBViewController+Internal.h in Headers */,
+				AAFEDA5715DC2E300030AFCD /* hide_symbols_facebook_internal.h in Headers */,
+				AAFEDA5815DC2E300030AFCD /* hide_symbols_facebook.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
