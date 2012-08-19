@@ -3,6 +3,7 @@
 //
 
 #ifdef __OBJC__
+#import "hide_symbols_facebook_internal.h"
     #import <UIKit/UIKit.h>
     #import <Foundation/Foundation.h>
 #endif

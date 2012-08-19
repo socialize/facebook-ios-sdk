@@ -110,11 +110,11 @@ mkdir $FB_SDK_FRAMEWORK/Versions/A/DeprecatedHeaders
 mkdir $FB_SDK_FRAMEWORK/Versions/A/Resources
 
 \cp \
-  $FB_SDK_BUILD/${BUILDCONFIGURATION}-iphoneos/facebook-ios-sdk/*.h \
+  $FB_SDK_BUILD/${BUILDCONFIGURATION}-iphoneos/FacebookSDK/*.h \
   $FB_SDK_FRAMEWORK/Versions/A/Headers \
   || die "Error building framework while copying SDK headers"
 \cp \
-  $FB_SDK_BUILD/${BUILDCONFIGURATION}-iphoneos/facebook-ios-sdk/*.h \
+  $FB_SDK_BUILD/${BUILDCONFIGURATION}-iphoneos/FacebookSDK/*.h \
   $FB_SDK_FRAMEWORK/Versions/A/DeprecatedHeaders \
   || die "Error building framework while copying SDK headers to deprecated folder"
 for HEADER in FBConnect.h \
