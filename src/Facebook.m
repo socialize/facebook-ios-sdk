@@ -246,8 +246,10 @@ static void *finishedContext = @"finishedContext";
     // This minimizes the chance that the user will have to enter his or
     // her credentials in order to authorize the application.
     BOOL didOpenOtherApp = NO;
+    
+    BOOL multiTaskingDisabled = [[[[NSBundle mainBundle] infoDictionary] objectForKey:@"UIApplicationExitsOnSuspend"] boolValue];
     UIDevice *device = [UIDevice currentDevice];
-    if ([device respondsToSelector:@selector(isMultitaskingSupported)] && [device isMultitaskingSupported]) {
+    if ([device respondsToSelector:@selector(isMultitaskingSupported)] && [device isMultitaskingSupported] && !multiTaskingDisabled) {
         if (tryFBAppAuth) {
             NSString *scheme = kFBAppAuthURLScheme;
             if (_urlSchemeSuffix) {
