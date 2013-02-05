@@ -17,6 +17,8 @@
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 
+@class FBSession;
+
 @protocol FBGraphObject;
 
 @interface FBUtility : NSObject
@@ -39,7 +41,15 @@
                            inBundle:(NSBundle *)bundle;
 
 @end
-
+ 
+#define FBConditionalLog(condition, desc, ...) \
+do { \
+    if (!(condition)) {	\
+        NSString *msg = [NSString stringWithFormat:(desc), ##__VA_ARGS__]; \
+        NSLog(@"FBConditionalLog: %@", msg); \
+    } \
+} while(NO)
+ 
 #define FB_BASE_URL @"facebook.com"
 
 
