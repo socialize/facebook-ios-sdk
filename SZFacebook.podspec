@@ -13,7 +13,7 @@ Pod::Spec.new do |s|
   s.source_files =  'src/**/*.{h,m}'
   s.header_dir   =  'FBConnect'
   s.resource     =  'src/FBDialog.bundle'
-
+  s.prefix_header_file = 'src/facebook_ios_sdk_Prefix.pch'
 
   #s.dependency 'SBJson', '2.2.3'
 end
